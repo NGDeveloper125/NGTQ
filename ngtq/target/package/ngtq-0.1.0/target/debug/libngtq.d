@@ -1,0 +1,1 @@
+/home/ngdeveloper/NGTQ/ngtq/target/package/ngtq-0.1.0/target/debug/libngtq.rlib: /home/ngdeveloper/NGTQ/ngtq/target/package/ngtq-0.1.0/src/lib.rs /home/ngdeveloper/NGTQ/ngtq/target/package/ngtq-0.1.0/src/ngtq_error.rs

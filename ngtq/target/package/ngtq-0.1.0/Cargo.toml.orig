@@ -1,0 +1,23 @@
+[package]
+name = "ngtq"
+version = "0.1.0"
+edition = "2021"
+authors = ["NGDeveloper125 <ngdeveloper@outlook.com>"]
+description = "A trait-based abstraction layer for task queues with ID and category support"
+repository = "https://github.com/NGDeveloper125/NGTQ"
+documentation = "https://docs.rs/ngtq"
+readme = "README.md"
+license = "MIT"
+keywords = ["queue", "task-queue", "abstraction", "message-bus", "async"]
+categories = ["task-queue", "thread-safe"]
+rust-version = "1.70.0"
+
+[dependencies]
+serde = { version = "1.0", features = ["derive"] }
+
+[features]
+default = []
+
+[package.metadata.docs.rs]
+all-features = true
+rustdoc-args = ["--cfg", "docsrs"]
