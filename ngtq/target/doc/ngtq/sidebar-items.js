@@ -1,0 +1,1 @@
+window.SIDEBAR_ITEMS = {"enum":["NGTQErrorType"],"struct":["NGTQError"],"trait":["NGTQ"]};
