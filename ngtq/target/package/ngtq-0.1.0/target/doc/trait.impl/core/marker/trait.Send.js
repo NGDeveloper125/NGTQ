@@ -1,0 +1,3 @@
+(function() {var implementors = {
+"ngtq":[["impl <a class=\"trait\" href=\"https://doc.rust-lang.org/1.81.0/core/marker/trait.Send.html\" title=\"trait core::marker::Send\">Send</a> for <a class=\"enum\" href=\"ngtq/enum.NGTQErrorType.html\" title=\"enum ngtq::NGTQErrorType\">NGTQErrorType</a>",1,["ngtq::ngtq_error::NGTQErrorType"]],["impl <a class=\"trait\" href=\"https://doc.rust-lang.org/1.81.0/core/marker/trait.Send.html\" title=\"trait core::marker::Send\">Send</a> for <a class=\"struct\" href=\"ngtq/struct.NGTQError.html\" title=\"struct ngtq::NGTQError\">NGTQError</a>",1,["ngtq::ngtq_error::NGTQError"]]]
+};if (window.register_implementors) {window.register_implementors(implementors);} else {window.pending_implementors = implementors;}})()
