@@ -9,7 +9,7 @@ documentation = "https://docs.rs/ngtq"
 readme = "README.md"
 license = "MIT"
 keywords = ["queue", "task-queue", "abstraction", "message-bus", "async"]
-categories = ["task-queue", "thread-safe"]
+categories = ["concurrency", "api-bindings"]
 rust-version = "1.70.0"
 
 [dependencies]
