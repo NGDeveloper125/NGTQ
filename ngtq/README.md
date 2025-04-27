@@ -43,7 +43,9 @@ NGTQ defines a trait that any task queue implementation must satisfy. This stand
 
 ## Compatible Implementations
 
-*Coming soon
+| Crate | Description | Github Repo |
+|----------|----------|----------|
+| ngtask_queue_basic | Basic implementation using in memory queues | https://github.com/NGDeveloper125/NGTaskQueue_Basic |
 
 ## Why Use NGTQ?
 
