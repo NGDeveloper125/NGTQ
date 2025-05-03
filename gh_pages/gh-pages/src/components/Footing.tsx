@@ -1,3 +1,4 @@
+import "../styles/Footing.css"
 
 type Props = {
 
@@ -5,7 +6,8 @@ type Props = {
 
 function Footing(props: Props) {
     return (
-        <div>
+        <div className="footing-container">
+            <hr />
             <p>This is the footing</p>
         </div>
     )

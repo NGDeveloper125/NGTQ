@@ -1,3 +1,4 @@
+import "../styles/Page.css"
 
 type Props = {
 
@@ -5,7 +6,7 @@ type Props = {
 
 function Page(props: Props) {
     return (
-        <div>
+        <div className="page-container">
             <h1>This is the page title</h1>
             <p>this is the page content</p>
             <hr />
