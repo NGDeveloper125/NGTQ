@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import Heading from './components/Heading'
 import Page from './components/Page'
+import Footing from './components/Footing'
 // import './App.css'
 
 function App() {
