@@ -2,11 +2,11 @@ html, body {
   margin: 0;
   padding: 0;
   height: 100%;
+  width: 100%;
 }
 
 .app-container {
-  width: 115rem;
-  margin-left: 2.5rem;
+  margin: 0.2rem;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;

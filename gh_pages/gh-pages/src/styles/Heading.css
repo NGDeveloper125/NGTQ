@@ -1,5 +1,35 @@
 
 .heading-container {
-    color: lawngreen;
     background-color: black;
+    display: flex;   
+    flex-direction: row;
+    text-align: center;
+}
+
+.title {
+    color: orange;
+    width: 30rem;
+    flex: 1;
+    margin-left: 1rem;
+}
+
+.bar-container {
+    margin-left: 10rem;
+}
+
+.bar {
+    color: aqua;
+    font-size: 1.6rem;
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+}
+
+.bar-item {
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
+}
+
+.selected {
+    color: beige;
 }
