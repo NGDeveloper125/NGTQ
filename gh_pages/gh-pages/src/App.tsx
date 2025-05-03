@@ -5,12 +5,12 @@ import Footing from './components/Footing'
 import './App.css'
 
 function App() {
-  const [count, setCount] = useState(0)
+  const [currentPage, setCurrentPage] = useState("About")
   const pages = ["About", "Task-Queues", "Bus-Services", "Community", "Conterbiutions"]
   return (
     <div className='app-container'>
       <div className='heading-container'>
-        <Heading pages={pages} currentPage='About' />
+        <Heading pages={pages} currentPage={currentPage} setCurrentPage={setCurrentPage} />
       </div>
       <div className='page-container'>
         <Page />

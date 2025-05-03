@@ -2,7 +2,8 @@ import "../styles/Heading.css"
 
 type Props = {
     pages: string[],
-    currentPage: string
+    currentPage: string,
+    setCurrentPage: (currentpage: string) => void
 }
 
 function Heading(props: Props) {
@@ -14,7 +15,10 @@ function Heading(props: Props) {
         <div className="bar-container">
         <ul  className="bar">
             {props.pages.map((page, index) => (
-                <li key={index} className={ page === props.currentPage ? 'selected bar-item' : 'non-selsected bar-item'}>{page}</li>
+                <li 
+                    key={index} 
+                    className={ page === props.currentPage ? 'selected bar-item' : 'non-selsected bar-item'}
+                    onClick={() => props.setCurrentPage(page)}>{page}</li>
             ))}
         </ul>
         </div>
