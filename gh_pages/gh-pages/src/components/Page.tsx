@@ -8,6 +8,7 @@ function Page(props: Props) {
         <div>
             <h1>This is the page title</h1>
             <p>this is the page content</p>
+            <hr />
         </div>
     )
 }

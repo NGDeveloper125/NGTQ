@@ -1,3 +1,4 @@
+import "../styles/Heading.css"
 
 type Props = {
 
@@ -5,8 +6,9 @@ type Props = {
 
 function Heading(props: Props) {
     return (
-     <div>
+     <div className="heading-container">
         <h1>NGTQ Eco-System</h1>
+        <hr />
      </div>   
     )
 }
