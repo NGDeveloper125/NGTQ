@@ -1,6 +1,11 @@
 import "../../styles/pages/About.css"
 
-function About() {
+
+type Props = {
+    setCurrentPage: (currentPage: string) => void
+}
+
+function About(props: Props) {
     return (
         <div>
             <h1>About NGTQ</h1>
@@ -77,7 +82,7 @@ function About() {
                         </ul>
                         <p>
                             Go to - 
-                            <span className="community-page-button" > Community Page</span> 
+                            <span className="community-page-button" onClick={() => props.setCurrentPage("Community")}> Community Page</span> 
                         </p>
                     </p>
                 </div>
@@ -92,7 +97,7 @@ function About() {
                             <li>Ways to contribute beyond code</li>
                         </ul>
                         <p>
-                            Go to - <span className="contribution-page-button" > Contribution Page</span> 
+                            Go to - <span className="contribution-page-button" onClick={() => props.setCurrentPage("Contribution")}> Contribution Page</span> 
                         </p>
                     </p>
                 </div>

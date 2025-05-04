@@ -7,13 +7,14 @@ import PageNotFound from "./pages/PageNotFound";
 import TaskQueues from "./pages/TaskQueues";
 
 type Props = {
-    currentPage: string
+    currentPage: string,
+    setCurrentPage: (currentPage: string) => void
 }
 
-function GetPageContent(currentPage: string) {
-    switch (currentPage) {
+function GetPageContent(props: Props) {
+    switch (props.currentPage) {
         case "About":
-            return <About />;
+            return <About setCurrentPage={props.setCurrentPage}/>;
         case "Task-Queues":
             return <TaskQueues />
         case "Bus-Services":
@@ -30,7 +31,7 @@ function GetPageContent(currentPage: string) {
 function Page(props: Props) {
     return (
         <div className="page-container">
-            {GetPageContent(props.currentPage)}
+            {GetPageContent(props)}
         </div>
     )
 }
