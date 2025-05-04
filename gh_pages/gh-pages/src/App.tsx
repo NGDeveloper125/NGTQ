@@ -13,7 +13,7 @@ function App() {
         <Heading pages={pages} currentPage={currentPage} setCurrentPage={setCurrentPage} />
       </div>
       <div className='page-container'>
-        <Page currentPage={currentPage}/>
+        <Page currentPage={currentPage} setCurrentPage={setCurrentPage}/>
       </div>
       <div className='footing-container'>
         <Footing />
