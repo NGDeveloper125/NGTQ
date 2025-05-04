@@ -1,1 +1,32 @@
 
+h3 {
+    font-size: 1.6rem;
+}
+
+p {
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 1.4rem;
+}
+
+.code {
+    background-color: darkslategray;
+    color: white;
+    width: 10rem;
+    padding: 0.5rem;
+}
+
+.open-source-section {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-left: 15rem;
+    padding-right: 15rem;
+}
+
+.community-page-button {
+    color: blue;
+}
+
+.contribution-page-button {
+    color: blue;
+}
