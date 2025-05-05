@@ -87,9 +87,9 @@ function About(props: Props) {
                     </p>
                 </div>
                 <div>
-                    <h3 className="title">Contributing</h3>
+                    <h3 className="title">Contributing To The Project</h3>
                     <p>
-                        Want to contribute to NGTQ? We'd love your help!<br/> Check out our Contributions page for guidelines on:
+                        New Contributers are welcom!<br/> Check out our Contributions page for guidelines on:
                         <ul>
                             <li>Setting up your development environment</li>
                             <li>Our coding standards</li>
