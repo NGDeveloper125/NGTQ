@@ -1,4 +1,9 @@
 
-.footing-container {
-    background-color: bisque;
+.footing-sections {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-left: 15rem;
+    margin-right: 15rem;
 }
+
