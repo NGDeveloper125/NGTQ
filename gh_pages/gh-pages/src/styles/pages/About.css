@@ -8,14 +8,34 @@ p {
     font-size: 1.4rem;
 }
 
-.code {
-    background-color: darkslategray;
-    color: white;
-    width: 10rem;
-    padding: 0.5rem;
+.task-queues-page-button {
+    color: blue;
+}
+
+.bus-services-page-button {
+    color: blue;
 }
 
 .open-source-section {
+    text-align: center;
+}
+
+.open-source-section-title {
+    text-align: center;
+    color: darkorange;
+}
+
+.title {
+    color: darkorange;
+}
+
+.open-source-section-list {
+    list-style-type: disc;
+    list-style-position: inside;
+    font-style: italic;
+}
+
+.community-contribution-section {
     display: flex;
     flex-direction: row;
     justify-content: space-between;

@@ -8,14 +8,14 @@ type Props = {
 function About(props: Props) {
     return (
         <div>
-            <h1>About NGTQ</h1>
+            <h1 className="title">About NGTQ</h1>
             <p>
                 Welcome to the NGTQ ecosystem - a new approach to task queue management in Rust.<br/>
                 At its core, NGTQ provides a standardized trait interface that defines how task queues should behave,<br/> 
                 making it easier for developers to create, use, and switch between different queue implementations.<br/>
             </p>
 
-            <h3>The Core Trait</h3>
+            <h3 className="title">The Core Trait</h3>
             <p>
                 The heart of our ecosystem is the NGTQ trait, which defines a comprehensive interface for task queue operations.<br/> 
                 This trait provides two primary queue types:<br/>
@@ -32,46 +32,38 @@ function About(props: Props) {
                 </ul>
             </p>
 
-            <h3>Task Queue Implementations</h3>
+            <h3 className="title">Task Queue Implementations</h3>
             <p>
-                The NGTQ ecosystem includes various implementations of the core trait. Our current flagship implementation is:
-                <ul>
-                    <li>NGTaskQueue Basic : A lightweight, in-memory implementation perfect for getting started with NGTQ or for applications with straightforward queuing needs.</li>
-                </ul>
-                Each implementation follows the NGTQ trait specification while potentially adding its own optimizations and features for specific use cases.
+                The NGTQ ecosystem includes various implementations of the core trait.<br/>
+                To check our task queues implementations: <span className="task-queues-page-button" onClick={() => props.setCurrentPage("Task-Queues")}>Task-Queues</span>
+                <br/>Each implementation follows the NGTQ trait specification while potentially adding its own optimizations and features for specific use cases.
             </p>
 
-            <h3>Bus Services</h3>
+            <h3 className="title">Bus Services</h3>
             <p>
                 The NGTQ trait's flexible design allows it to be extended into message bus services.<br/>
                 These services implement the NGTQ trait while providing additional messaging and communication capabilities,<br/>
-                making them perfect for distributed systems and microservice architectures.
-            </p>
-
-            <h3>Getting Started</h3>
-            <p>
-                To start using NGTQ in your Rust projects, simply add the core trait to your Cargo.toml :
-            </p>
-            <p className="code">
-                [dependencies]<br/>
-                ngtq = "0.1.0"<br/>
-            </p>
-
-            <h3>Open Source and Community-Driven</h3>
-            <p>
-                NGTQ is proudly open source under the MIT License, welcoming contributions from developers worldwide. Whether you're interested in:
-                <ul>
-                    <li>Implementing the NGTQ trait for your specific use case</li>
-                    <li>Improving existing implementations</li>
-                    <li>Creating new tools around the ecosystem</li>
-                    <li>Documenting and sharing your experiences</li>
-                </ul>
-                We encourage you to get involved!
+                making them perfect for distributed systems and microservice architectures.<br/>
+                To check out Bus-Services: <span className="bus-services-page-button" onClick={() => props.setCurrentPage("Bus-Services")}>Bus-Services</span>
             </p>
 
             <div className="open-source-section">
+                <h3 className="open-source-section-title">Open Source and Community-Driven</h3>
+                <p>
+                    NGTQ is an open source under the MIT License, welcoming contributions from developers worldwide.
+                    <br/> Whether you're interested in:
+                    <ul className="open-source-section-list">
+                        <li>Implementing the NGTQ trait for your specific use case</li>
+                        <li>Improving existing implementations</li>
+                        <li>Creating new tools around the ecosystem</li>
+                        <li>Documenting and sharing your experiences</li>
+                    </ul>
+                    We encourage you to get involved!
+                </p>
+            </div>
+            <div className="community-contribution-section">
                 <div>
-                    <h3>Join Our Community</h3>
+                    <h3 className="title">Join Our Community</h3>
                     <p>
                         We believe in the power of community-driven development.<br /> If you're interested in:
                         <ul>
@@ -87,7 +79,7 @@ function About(props: Props) {
                     </p>
                 </div>
                 <div>
-                    <h3>Contributing</h3>
+                    <h3 className="title">Contributing</h3>
                     <p>
                         Want to contribute to NGTQ? We'd love your help!<br/> Check out our Contributions page for guidelines on:
                         <ul>
@@ -102,11 +94,6 @@ function About(props: Props) {
                     </p>
                 </div>
             </div>
-                <span>
-                    Note: For the latest discussions, announcements, and updates, don't forget to check our Community page.<br/> 
-                    If you're interested in contributing, our Contributions page has all the information you need to get started.
-                </span>
-             
         </div>
     );
 }
