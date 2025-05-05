@@ -1,5 +1,5 @@
 import "../../styles/pages/About.css"
-
+import NGTQLayerArc from "../../assets/NGTQLayerArc.png";
 
 type Props = {
     setCurrentPage: (currentPage: string) => void
@@ -8,30 +8,37 @@ type Props = {
 function About(props: Props) {
     return (
         <div>
-            <h1 className="title">About NGTQ</h1>
-            <p>
-                Welcome to the NGTQ ecosystem - a new approach to task queue management in Rust.<br/>
-                At its core, NGTQ provides a standardized trait interface that defines how task queues should behave,<br/> 
-                making it easier for developers to create, use, and switch between different queue implementations.<br/>
-            </p>
+            <div className="top-page-section">
+                <div className="top-page-section-left">
+                    <h1 className="title">About NGTQ</h1>
+                    <p>
+                        Welcome to the NGTQ ecosystem - a new approach to task queue management in Rust.<br/>
+                        At its core, NGTQ provides a standardized trait interface that defines how task queues should behave<br/> 
+                        And creating an abstraction layer between services and task queues implementation. <br /> 
+                        Making it easier for developers to create, use, and switch between different queue implementations.<br/>
+                    </p>
 
-            <h3 className="title">The Core Trait</h3>
-            <p>
-                The heart of our ecosystem is the NGTQ trait, which defines a comprehensive interface for task queue operations.<br/> 
-                This trait provides two primary queue types:<br/>
-                <ul>
-                    <li>ID-Based Queues : Perfect for scenarios where you need to track and retrieve specific tasks by their unique identifiers.</li>
-                    <li>Category-Based Queues : Ideal for organizing and processing tasks based on their types or categories.</li>
-                </ul>
-                The trait ensures that all implementations provide essential operations like:<br/>
-                <ul>
-                    <li>Task enqueueing with both ID and category-based approaches</li>
-                    <li>Task retrieval methods</li>
-                    <li>Queue size monitoring</li>
-                    <li>Robust error handling through the custom NGTQError type</li>
-                </ul>
-            </p>
-
+                    <h3 className="title">The Core Trait</h3>
+                    <p>
+                        The heart of our ecosystem is the NGTQ trait, which defines a comprehensive interface for task queue operations.<br/> 
+                        This trait provides two primary queue types:<br/>
+                        <ul>
+                            <li>ID-Based Queues : Perfect for scenarios where you need to track and retrieve specific tasks by their unique identifiers.</li>
+                            <li>Category-Based Queues : Ideal for organizing and processing tasks based on their types or categories.</li>
+                        </ul>
+                        The trait ensures that all implementations provide essential operations like:<br/>
+                        <ul>
+                            <li>Task enqueueing with both ID and category-based approaches</li>
+                            <li>Task retrieval methods</li>
+                            <li>Queue size monitoring</li>
+                            <li>Robust error handling through the custom NGTQError type</li>
+                        </ul>
+                    </p>
+                </div>
+                <div className="top-page-section-right">
+                <img className="diagram-image" src={NGTQLayerArc} alt="NGTQ Layer Architecture" />
+                </div>
+            </div>
             <h3 className="title">Task Queue Implementations</h3>
             <p>
                 The NGTQ ecosystem includes various implementations of the core trait.<br/>
@@ -43,7 +50,7 @@ function About(props: Props) {
             <p>
                 The NGTQ trait's flexible design allows it to be extended into message bus services.<br/>
                 These services implement the NGTQ trait while providing additional messaging and communication capabilities,<br/>
-                making them perfect for distributed systems and microservice architectures.<br/>
+                Making them perfect for distributed systems and microservice architectures.<br/>
                 To check out Bus-Services: <span className="bus-services-page-button" onClick={() => props.setCurrentPage("Bus-Services")}>Bus-Services</span>
             </p>
 
@@ -58,6 +65,7 @@ function About(props: Props) {
                         <li>Creating new tools around the ecosystem</li>
                         <li>Documenting and sharing your experiences</li>
                     </ul>
+                    Check it out at: <a href="https://github.com/NGDeveloper125/NGTQ">NGTQ Github Repo</a><br />
                     We encourage you to get involved!
                 </p>
             </div>

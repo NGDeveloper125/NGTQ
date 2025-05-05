@@ -8,6 +8,16 @@ p {
     font-size: 1.4rem;
 }
 
+.top-page-section {
+    display: flex;
+    flex-direction: row;
+}
+
+.diagram-image {
+    padding-top: 4rem;
+    margin-left: 6rem;
+}
+
 .task-queues-page-button {
     color: blue;
 }
