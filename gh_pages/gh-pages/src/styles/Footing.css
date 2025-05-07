@@ -1,9 +1,25 @@
 
+.footing-container {
+    background-color: black;
+}
+
 .footing-sections {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     margin-left: 15rem;
     margin-right: 15rem;
+}
+
+.title {
+    color: darkorange;
+}
+
+.list {
+    color: white;
+}
+
+.link {
+    color: aqua;
 }
 
