@@ -1,4 +1,4 @@
-
+import NGTaskQueueBasic from "./task_queues/ngtask_queue_basic";
 
 function TaskQueues() {
     return (
@@ -11,7 +11,7 @@ function TaskQueues() {
                 You can find implementaion instructions, pros and cons and banchmark for each task queue. <br/>   
             </p>
             <h3>Current Task Queues Implementations</h3>
-            
+            <NGTaskQueueBasic />           
         </div>
     );
 }
