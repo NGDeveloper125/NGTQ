@@ -1,4 +1,5 @@
-import NGTaskQueueBasic from "./task_queues/ngtask_queue_basic";
+import "../../styles/pages/TaskQueues.css"
+import NGTaskQueueBasic from "./task_queues/NGTaskQueueBasic";
 
 function TaskQueues() {
     return (
@@ -10,8 +11,8 @@ function TaskQueues() {
                 Each contains different features and are better for different scnarios.<br/>
                 You can find implementaion instructions, pros and cons and banchmark for each task queue. <br/>   
             </p>
-            <h3>Current Task Queues Implementations</h3>
-            <div>
+            <h3 className="task-queues-container-title">Current Task Queues Implementations</h3>
+            <div className="task-queues-container">
                 <NGTaskQueueBasic />
             </div>           
         </div>

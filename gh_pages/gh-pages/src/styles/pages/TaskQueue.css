@@ -1,0 +1,21 @@
+
+.queue-container {
+    background-color: darkorange;
+}
+
+.queue-title-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.queue-title {
+    padding-left: 2rem;
+}
+
+.see-details-btn {
+    padding-right: 10rem;
+    font-size: larger;
+    color: blue;
+}
