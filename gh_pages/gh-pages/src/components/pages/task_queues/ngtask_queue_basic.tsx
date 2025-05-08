@@ -1,4 +1,4 @@
-
+import "../../../styles/pages/task_queues/ngtask_queue_basic.css"
 
 function NGTaskQueueBasic() {
     return (

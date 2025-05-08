@@ -11,7 +11,9 @@ function TaskQueues() {
                 You can find implementaion instructions, pros and cons and banchmark for each task queue. <br/>   
             </p>
             <h3>Current Task Queues Implementations</h3>
-            <NGTaskQueueBasic />           
+            <div>
+                <NGTaskQueueBasic />
+            </div>           
         </div>
     );
 }

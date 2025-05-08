@@ -1,0 +1,10 @@
+
+.queue-container {
+    width: 100%;
+}
+
+.queue-title-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
