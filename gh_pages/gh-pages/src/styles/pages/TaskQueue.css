@@ -3,6 +3,10 @@
     background-color: darkorange;
 }
 
+.queue-container-extended {
+    background-color: darkorange;
+}
+
 .queue-title-container {
     display: flex;
     flex-direction: row;
@@ -18,4 +22,41 @@
     padding-right: 10rem;
     font-size: larger;
     color: blue;
+}
+
+.expended-section-titles-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-left: 10rem;
+    padding-right: 10rem;
+}
+
+.description-title-container {
+    border-right: 1rem solid black;
+    border-radius: 1rem;
+}
+
+.description-title {
+
+}
+
+.description-text {
+    font-size: 1.2rem;
+}
+
+.include-title-container {
+
+}
+
+.include-title {
+
+}
+
+.not-include-title-container {
+
+}
+
+.not-include-title {
+
 }
